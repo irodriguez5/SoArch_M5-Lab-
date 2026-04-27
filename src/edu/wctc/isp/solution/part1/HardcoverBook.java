@@ -73,7 +73,7 @@ public class HardcoverBook implements Book {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("Hardcover Book: ");
+        StringBuilder sb = new StringBuilder("Hardcover edu.wctc.isp.Book: ");
         sb.append("\n Title: ").append(title);
         sb.append("\n Author: ").append(author);
         sb.append("\n Cost: $").append(cost);

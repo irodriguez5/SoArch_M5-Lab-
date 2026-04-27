@@ -1,10 +1,10 @@
 package edu.wctc.isp;
 
-import java.time.Duration;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class HardcoverBook implements Product {
+public class HardcoverBook implements Product,Book {
 
     private String title;
     private String isbn;
@@ -22,11 +22,6 @@ public class HardcoverBook implements Product {
         this.releaseDate = releaseDate;
         this.author = author;
         this.pageCount = pageCount;
-    }
-
-    @Override
-    public String getArtist() {
-        return "";
     }
 
     @Override
@@ -55,11 +50,6 @@ public class HardcoverBook implements Product {
     }
 
     @Override
-    public Duration getPlayingTime() {
-        return null;
-    }
-
-    @Override
     public int getQuantityOnHand() {
         return quantityOnHand;
     }
@@ -84,7 +74,7 @@ public class HardcoverBook implements Product {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("Hardcover Book: ");
+        StringBuilder sb = new StringBuilder("Hardcover edu.wctc.isp.Book: ");
         sb.append("\n Title: ").append(title);
         sb.append("\n Author: ").append(author);
         sb.append("\n Cost: $").append(cost);
